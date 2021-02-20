@@ -1,0 +1,35 @@
+
+.column {
+    display: inline;
+}
+@media (min-width: 320px) {
+    .one,.two,.three,.fourth {
+        width: 100%;
+        border-style:groove;
+        margin:6px
+    }
+}
+
+@media (min-width: 768px) {
+    .one,.two {
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-between;
+        border-style:groove;
+        display: inline;
+        float: right;
+    }
+}
+    .three,.fourth {
+        width: 45%;        
+        border-style:groove;
+        flex-direction: column;
+        justify-content: space-between;
+        display: inline-block;
+    }
+    @media (min-width: 1024px) {
+        .column {
+            display: flex;
+            flex-direction: row;
+        }
+    }
